@@ -1,0 +1,3630 @@
+/* Все элементы на странице  будут стараться  принимать именно те размеры, которые мы им здесь зададим , учитывая border и padding  */
+* {
+  box-sizing: border-box;
+}
+
+/* Обнуляю стили, которые  браузер задаёт  по умолчанию*/
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Универсальный стиль для ВСЕХ заголовков типа h2 */
+.universal-h2 {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 101.38%;
+}
+
+/* -------------------------------------- Шрифты , которые используются на нашем сайте :    ------------------------------ */
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+/* Основным, наиболее часто использующимся шрифтом на сайте  является  Roboto, поэтому я всему body прописываю шрифт  Roboto  */
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-color: bisque; */
+}
+
+/* Roboto Slab же    мы будем ОТДЕЛЬНО   прописывать конкретно  для тех элементов , колторые его используют  */
+
+/* -------------------------------------- // Шрифты , которые используются на нашем сайте :    ------------------------------ */
+
+/* Контейнер шириной 1440px, который центрирует страницу посередине  */
+.parent-wrapper {
+  /* max-width: 1440px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -- --------------------------------------------------- Секция  ШАПКА */
+.header {
+  padding-top: 38px;
+  padding-left: 41px;
+}
+
+/* ----------------------------------------------------Медиазапросы для ПЛАНШЕТОВ  */
+@media (min-width: 992px) and (max-width: 1279px) {
+  /* ШАПКА */
+  .header {
+    padding-top: 22px;
+    padding-left: 41px;
+    width: 79%;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header img {
+    width: 64px;
+    height: 38px;
+  }
+}
+/* ----------------------------------------------------// Медиазапросы для ПЛАНШЕТОВ  */
+
+/* --------------------------------------------------------- МЕДИАЗАПРОСЫ ДЛЯ СМАРТФОНОВ  */
+@media (min-width: 320px) and (max-width: 991px) {
+  /* ШАПКА */
+  .header {
+    padding-top: 48px;
+    padding-left: 0;
+    width: 85.3%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 17px;
+  }
+
+  .header img {
+    width: 52.19px;
+    height: 30.75px;
+  }
+}
+/* ------------------------------------------------ //  МЕДИАЗАПРОСЫ ДЛЯ СМАРТФОНОВ  */
+
+/* -- -------------------------------------------------// - Секция  ШАПКА  -------------------------------------------------*/
+
+/*  */
+
+/* ---------------------------------------------------------СЕКЦИЯ "О КУРСЕ" */
+.about-course-section {
+  /* width: 1198px; */
+  width: 93.5%;
+
+  margin-left: auto;
+
+  margin-right: auto;
+  /* margin-left: 121px;
+  margin-bottom: 100px; */
+
+  margin-bottom: 160px;
+}
+
+.about-h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 55px;
+  line-height: 55.76px;
+  font-weight: 700;
+  margin-bottom: 58px;
+}
+
+.about-lead {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-description {
+  font-size: 24px;
+  line-height: 150%;
+  width: 662px;
+  height: 374px;
+  margin-right: 14%;
+  /* margin-right: 190px; */
+}
+
+.about-description p {
+  width: 662px;
+}
+
+.about-lead-img {
+  width: 366px;
+  height: 344px;
+  margin-top: 24px;
+  right: 4%;
+}
+.about-info {
+  display: flex;
+  margin-top: 95px;
+}
+.about-info-img {
+  width: 232px;
+  height: 219px;
+  margin-right: 131px;
+}
+.about-info-table {
+  margin-top: 65px;
+  border-collapse: collapse;
+}
+.about-info-table th {
+  font-size: 25px;
+  font-weight: 700;
+  width: 245px;
+  height: 40px;
+  line-height: 32.5px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+}
+
+.about-info-table td {
+  font-size: 18px;
+  font-weight: 400;
+  width: 245px;
+  height: 39px;
+  line-height: 23.4px;
+  padding-left: 0;
+  padding-right: 95px;
+  padding-top: 5px;
+}
+
+/*  ------------------------------------------------------------        МЕДИАЗАПРОСЫ          Для планшетов  ----------------------------------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1279px) {
+  .about-course-section {
+    /* width: 690px; */
+    width: 69.55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 95px;
+  }
+
+  .about-h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 32px;
+    line-height: 32.44px;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+  .about-lead {
+    display: flex;
+  }
+  .about-description {
+    font-size: 14px;
+    line-height: 150%;
+    width: 383.41px;
+    height: 216.61px;
+
+    margin-right: 94.98px;
+  }
+
+  .about-description p {
+    width: 383px;
+  }
+
+  .about-lead-img {
+    width: 211px;
+    height: 199px;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  .about-info {
+    display: flex;
+    margin-top: 54px;
+  }
+  .about-info-img {
+    width: 134.37px;
+    height: 126px;
+    margin-right: 76.45px;
+  }
+  .about-info-table {
+    margin-top: 40px;
+    border-collapse: collapse;
+
+    width: 426px;
+  }
+  .about-info-table th {
+    font-size: 15px;
+    font-weight: 700;
+    width: 140px;
+    height: 21px;
+    line-height: 130%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .about-info-table td {
+    font-size: 11px;
+    font-weight: 400;
+    width: 140px;
+    height: 22.59px;
+    line-height: 130%;
+    padding-left: 0;
+    padding-right: 50px;
+  }
+}
+/*  ------------------------------------------------------------        МЕДИАЗАПРОСЫ          Для планшетов  ----------------------------------------------------------------------- */
+
+/*  */
+
+/* ------------------------------------------------------------------------ МЕДИАЗАПРОСЫ  ДЛЯ МОБИЛОК ---------------------- */
+@media (min-width: 320px) and (max-width: 991px) {
+  .about-course-section {
+    /* width: 69.55%; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 139px;
+  }
+
+  .about-h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    margin-bottom: 27px;
+    font-size: 26px;
+    line-height: 101.38%;
+  }
+  .about-lead {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-description {
+    width: 100%;
+    height: 216.61px;
+
+    margin-right: 94.98px;
+
+    font-size: 12px;
+    line-height: 150%;
+  }
+
+  .about-description p {
+    width: 102%;
+  }
+
+  .about-lead-img {
+    width: 170px;
+    height: 160px;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 0px;
+  }
+
+  .about-info {
+    display: flex;
+    margin-top: 5px;
+
+    position: relative;
+  }
+
+  /* Картинка человека с проектором  */
+  .about-info-img {
+    width: 108px;
+    height: 102px;
+    margin-right: 76.45px;
+
+    position: absolute;
+    right: -74px;
+    top: 83px;
+
+    /* display: none; */
+  }
+
+  /* Таблица */
+  .about-info-table {
+    margin-top: 40px;
+    border-collapse: collapse;
+
+    position: relative;
+    right: 4px;
+
+    width: 237px;
+  }
+
+  .about-info-table th {
+    font-weight: 700;
+    /* width: 140px; */
+    height: 21px;
+
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+
+    font-size: 12px;
+    line-height: 130%;
+  }
+
+  /* Ячейка таблицы */
+  .about-info-table td {
+    font-weight: 400;
+    /* width: 140px; */
+    height: 22.59px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+
+    font-size: 10px;
+    line-height: 130%;
+  }
+
+  /* Перемещаем на новую строчку третью ячейку */
+
+  .position-th {
+    position: absolute;
+
+    top: 75px;
+    left: 0;
+  }
+
+  .position-td {
+    position: absolute;
+
+    top: 92px;
+    left: 0;
+  }
+}
+/* ------------------------------------------------------------------------  // МЕДИАЗАПРОСЫ  ДЛЯ МОБИЛОК  */
+
+/* ---------------------------------------------------------------------- // Секция "О КУРСЕ */
+
+/*  */
+
+/* ----------------------------------------------------------------- Секция "ФОРМАТ ЗАНЯТИЙ */
+.class-format {
+  margin-bottom: 218px;
+}
+
+/* Заголовок секции -  "Формат занятий */
+.class-format__heading {
+  font-family: "Roboto Slab", serif;
+  font-size: 55px;
+  line-height: 55.76px;
+
+  padding-left: 35px;
+
+  margin-bottom: 127px;
+}
+
+/* Обёртка для трёх карточек */
+.class-format__wrapper-for-cards {
+  display: flex;
+
+  padding-left: 40px;
+}
+
+/* Стили для карточки 1 */
+.class-format__card:nth-child(1) {
+  width: 223px;
+  margin-right: 120px;
+}
+
+/* Стили для карточки 2 */
+.class-format__card:nth-child(2) {
+  width: 270px;
+  margin-right: 116px;
+}
+
+/* Стили для карточки 3 */
+.class-format__card:nth-child(3) {
+  width: 245px;
+}
+
+/* ЗАГОЛОВОК     в каждой карточке */
+.class-format__card-heading {
+  font-weight: 700;
+
+  font-size: 25px;
+  line-height: 32.5px;
+
+  color: #1e4681;
+
+  margin-bottom: 8px;
+}
+
+/* Параграф - описание внутри карточки */
+.class-format__card-description {
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+/* Вспомогательный контейнер шириной 1272 пикселя */
+.container1272px {
+  width: 1272px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*  ------------------------------------------------------------        МЕДИАЗАПРОСЫ          Для планшетов  ----------------------------------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1279px) {
+  .class-format {
+    margin-bottom: 123px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Вспомогательный контейнер шириной 1272 пикселя */
+  .container1272px {
+    width: 69.55%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Заголовок секции -  "Формат занятий */
+  .class-format__heading {
+    font-family: "Roboto Slab", serif;
+    font-size: 32px;
+    line-height: 32.44px;
+    text-align: left;
+    margin-bottom: 75px;
+    padding-left: 0;
+  }
+
+  /* Обёртка для трёх карточек */
+  .class-format__wrapper-for-cards {
+    display: flex;
+    padding-left: 0;
+  }
+
+  /* Стили для карточки 1 */
+  .class-format__card:nth-child(1) {
+    width: 140px;
+    margin-right: 59px;
+  }
+
+  /* Стили для карточки 2 */
+  .class-format__card:nth-child(2) {
+    width: 172px;
+    margin-right: 50.87px;
+  }
+
+  /* Стили для карточки 3 */
+  .class-format__card:nth-child(3) {
+    width: 141.9px;
+  }
+
+  /* ЗАГОЛОВОК     в каждой карточке */
+  .class-format__card-heading {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19.5px;
+    color: #1e4681;
+    margin-bottom: 5px;
+  }
+
+  /* Параграф - описание внутри карточки */
+  .class-format__card-description {
+    font-size: 11px;
+    line-height: 14.3px;
+  }
+}
+
+/*  ------------------------------------------------------------ //       МЕДИАЗАПРОСЫ          Для планшетов  ----------------------------------------------------------------------- */
+
+/*  */
+
+/*  ------------------------------------------------------------ МЕДИАЗАПРОСЫ ДЛЯ СМАРТФОНОВ ------------------------------------------------------------- */
+@media (min-width: 320px) and (max-width: 991px) {
+  .class-format {
+    margin-bottom: 76px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Вспомогательный контейнер шириной 1272 пикселя */
+  .container1272px {
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Заголовок секции -  "Формат занятий */
+  .class-format__heading {
+    font-family: "Roboto Slab", serif;
+
+    width: 310px;
+
+    font-size: 26px;
+    line-height: 101.38%;
+
+    text-align: left;
+    margin-bottom: 35px;
+    padding-left: 5px;
+  }
+
+  /* Обёртка для трёх карточек */
+  .class-format__wrapper-for-cards {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+  }
+
+  /* Стили для карточки 1 */
+  .class-format__card:nth-child(1) {
+    width: 140px;
+    margin-right: 59px;
+    margin-bottom: 30px;
+  }
+
+  /* Стили для карточки 2 */
+  .class-format__card:nth-child(2) {
+    width: 172px;
+    margin-right: 50.87px;
+    margin-bottom: 30px;
+  }
+
+  /* Стили для карточки 3 */
+  .class-format__card:nth-child(3) {
+    width: 141.9px;
+  }
+
+  /* ЗАГОЛОВОК     в каждой карточке */
+  .class-format__card-heading {
+    font-weight: 700;
+
+    font-size: 12px;
+    line-height: 130%;
+
+    color: #1e4681;
+    margin-bottom: 5px;
+  }
+
+  /* Параграф - описание внутри карточки */
+  .class-format__card-description {
+    font-size: 10px;
+    line-height: 130%;
+    width: 171px;
+  }
+}
+
+/*  ------------------------------------------------------------ // МЕДИАЗАПРОСЫ ДЛЯ СМАРТФОНОВ ------------------------------------------------------------- */
+
+/*  */
+/* --------------------------------------------------------------- // Секция "ФОРМАТ ЗАНЯТИЙ */
+
+/*  */
+
+/* -------------------------------------------------------------------  Секция "ЧТО УЗНАЕМ  -------------------------------------*/
+
+/* Родительская обёртка   для картинки с самураями,  текстового блока и картинки с Годзиллой */
+.what-we-learn__wrapper {
+  position: relative;
+
+  margin-bottom: 228px;
+}
+
+/* Картинка с двумя самураями */
+.what-we-learn__samurai {
+  display: block;
+  height: auto;
+  max-width: 284px;
+  margin-left: auto;
+
+  position: absolute;
+  right: 215px;
+  bottom: 401px;
+}
+
+/* ----------- Текстовый блок */
+
+/* Обёртка над заголовком и списком */
+.what-we-learn__description {
+  padding-left: 36px;
+}
+
+/* Заголовок     "Что узнаем"   */
+.what-we-learn__heading {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 55.76px;
+
+  margin-bottom: 58px;
+  padding-left: 6px;
+}
+
+/* Список */
+.what-we-learn__list {
+  font-size: 24px;
+  line-height: 36px;
+
+  padding-left: 23px;
+
+  /* width: 662px; */
+  width: 668px;
+}
+
+/* Элементы списка */
+.what-we-learn__list-item {
+}
+/* --------- // Текстовый блок */
+
+/* Картинка с Годзиллой */
+.what-we-learn__godzilla {
+  display: block;
+  height: auto;
+  max-width: 386px;
+  margin-left: auto;
+
+  position: absolute;
+  right: 127px;
+  bottom: 43px;
+}
+
+/*  */
+
+/*  --------------------------------------   МЕДИАЗАПРОСЫ для ПЛАНШЕТОВ    от 992 пикселей до 1279 --------------------------------------------  */
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  /* Сам тег section */
+  /* .what-we-learn {
+    width: 85.95%;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  /* Родительская обёртка   для картинки с самураями,  текстового блока и картинки с Годзиллой */
+
+  .what-we-learn__wrapper {
+    position: relative;
+
+    margin-bottom: 128px;
+
+    width: 90.95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Картинка с двумя самураями */
+  .what-we-learn__samurai {
+    display: block;
+    height: auto;
+    max-width: 284px;
+    margin-left: auto;
+
+    position: absolute;
+    right: 206px;
+    bottom: 238px;
+  }
+
+  .what-we-learn__samurai img {
+    display: block;
+    height: auto;
+    max-width: 158px;
+    /* margin-left: auto; */
+    /* 
+    position: absolute;
+    right: 209px;
+    bottom: 401px; */
+  }
+
+  /* ----------- Текстовый блок */
+
+  /* Обёртка над заголовком и списком */
+  .what-we-learn__description {
+    /* width: 703px; */
+    width: 76.95%;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Заголовок     "Что узнаем"   */
+  .what-we-learn__heading {
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 34px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 101.38%;
+    padding-left: 0;
+  }
+
+  /* Список */
+  .what-we-learn__list {
+    font-size: 24px;
+    line-height: 36px;
+
+    padding-left: 10px;
+
+    /* width: 383px; */
+    width: 397px;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  /* Элементы списка */
+  .what-we-learn__list-item {
+  }
+  /* --------- // Текстовый блок */
+
+  /* Картинка с Годзиллой */
+  .what-we-learn__godzilla {
+    display: block;
+    height: auto;
+    max-width: 386px;
+    margin-left: auto;
+
+    position: absolute;
+    right: 153px;
+    bottom: 27px;
+  }
+
+  .what-we-learn__godzilla img {
+    display: block;
+    height: auto;
+    max-width: 223px;
+  }
+}
+/*  -------------------------------------- //   МЕДИАЗАПРОСЫ для ПЛАНШЕТОВ    от 992 пикселей до 1279 --------------------------------------------  */
+
+/*  */
+
+/* -------------------------------------------------------- МЕДИАЗАПРОСЫ для СМАРТФОНОВ ---------------------------------------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 991px) {
+  /* Сам тег section */
+  /* .what-we-learn {
+    width: 85.95%;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  /* Родительская обёртка   для картинки с самураями,  текстового блока и картинки с Годзиллой */
+
+  .what-we-learn__wrapper {
+    position: relative;
+
+    margin-bottom: 169px;
+
+    width: 90.95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Картинка с двумя самураями */
+  .what-we-learn__samurai {
+    display: block;
+    height: auto;
+    max-width: 132px;
+    margin-left: auto;
+    position: absolute;
+    right: 1px;
+    bottom: 277px;
+  }
+
+  .what-we-learn__samurai img {
+    display: block;
+    height: auto;
+    max-width: 132px;
+    /* margin-left: auto; */
+    /* 
+    position: absolute;
+    right: 209px;
+    bottom: 401px; */
+  }
+
+  /* ----------- Текстовый блок */
+
+  /* Обёртка над заголовком и списком */
+  .what-we-learn__description {
+    /* width: 76.95%; */
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Заголовок     "Что узнаем"   */
+  .what-we-learn__heading {
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 101.38%;
+    padding-left: 0;
+
+    position: relative;
+    right: 4px;
+  }
+
+  /* Список */
+  .what-we-learn__list {
+    font-size: 12px;
+    line-height: 150%;
+
+    padding-left: 4px;
+
+    /* width: 299px; */
+    width: 101%;
+
+    font-weight: normal;
+  }
+
+  /* Элементы списка */
+  .what-we-learn__list-item {
+  }
+  /* --------- // Текстовый блок */
+
+  /* Картинка с Годзиллой */
+  .what-we-learn__godzilla {
+    display: block;
+    height: auto;
+    max-width: 179px;
+    margin-left: auto;
+    position: absolute;
+    right: 58px;
+    bottom: -116px;
+  }
+
+  .what-we-learn__godzilla img {
+    display: block;
+    height: auto;
+    max-width: 179px;
+  }
+}
+/* -------------------------------------------------------- МЕДИАЗАПРОСЫ для СМАРТФОНОВ ---------------------------------------------------------------------------------*/
+
+/* // ----------- ------------------------------------------// Секция "ЧТО УЗНАЕМ */
+
+/*  */
+/* ----------------------------------------           Секция "Как смотреть кино" ----------------------------------------*/
+.how-to-watch-movie {
+  /* width: 1112px; */
+  width: 87%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 91px;
+
+  position: relative;
+  right: 42px;
+
+  margin-bottom: 170px;
+}
+
+.top {
+  display: flex;
+}
+
+.info {
+  display: flex;
+  height: 32px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  justify-content: end;
+}
+
+.info p {
+  margin-top: 4px;
+}
+
+.globe {
+  width: 22px;
+  height: 25px;
+  margin-right: 9px;
+}
+
+.clock {
+  width: 22px;
+  height: 22px;
+  margin-left: 39px;
+  margin-right: 10px;
+}
+
+.calendar {
+  width: 20px;
+  height: 22px;
+  margin-left: 46px;
+  margin-right: 13px;
+}
+
+.center {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-part {
+  height: 257px;
+}
+
+.how {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 101.38%;
+  color: #000000;
+  margin-top: 18px;
+  margin-left: 2px;
+  height: 190px;
+}
+
+.text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+
+.second-part {
+  margin-right: 39px;
+  margin-top: 8px;
+}
+
+/* Картинка человека */
+.Men {
+  width: 305px;
+  height: 376px;
+}
+
+.third-part {
+  width: 483.63px;
+  height: 200px;
+  background-color: #1e4681;
+  border-radius: 5px;
+  transform: rotate(-4deg);
+  margin-left: 289px;
+  margin-top: 62px;
+  padding-top: 20px;
+  padding-left: 29px;
+  padding-right: 29px;
+}
+
+.block {
+  width: 434px;
+  height: 125px;
+  left: 432px;
+  top: 702px;
+  font-family: "Roboto Slab", serif;
+  font-size: 25px;
+  line-height: 130%;
+  color: white;
+  margin: auto;
+  margin-bottom: 6px;
+}
+
+.block-two {
+  width: 435px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: right;
+  color: #ffffff;
+}
+
+/*  ------------------------------------------------------------- МЕДИАЗАПРОСЫ   ДЛЯ ПЛАНШЕТОВ  */
+@media (min-width: 992px) and (max-width: 1279px) {
+  /*  */
+
+  .how-to-watch-movie {
+    /* width: 1112px; */
+    /* width: 87%; */
+
+    width: 61.9%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 53px;
+
+    position: relative;
+    right: 42px;
+
+    margin-bottom: 101px;
+  }
+  .top {
+    display: flex;
+  }
+  .info {
+    display: flex;
+    height: 32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    justify-content: end;
+  }
+  .info p {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 115%;
+  }
+  .globe {
+    width: 12px;
+    height: 12px;
+    margin-right: 9px;
+  }
+  .clock {
+    width: 12px;
+    height: 12px;
+    margin-left: 16px;
+    margin-right: 8px;
+  }
+  .calendar {
+    width: 12px;
+    height: 12px;
+    margin-left: 24px;
+    margin-right: 8px;
+  }
+
+  .center {
+    display: flex;
+    justify-content: space-between;
+  }
+  .first-part {
+    height: 257px;
+  }
+  .how {
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: bold;
+
+    color: #000000;
+    margin-top: -3px;
+    margin-left: 2px;
+    height: 46px;
+
+    font-size: 46px;
+    line-height: 101.38%;
+  }
+
+  .text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+
+    color: #000000;
+    margin-top: 66px;
+    margin-left: 2px;
+
+    font-size: 12px;
+    line-height: 150%;
+  }
+
+  .second-part {
+    margin-right: -6px;
+    margin-top: -12px;
+  }
+
+  .second-part img {
+    width: 176px;
+    height: 217px;
+  }
+
+  .third-part {
+    width: 279px;
+    height: 115px;
+    background-color: #1e4681;
+    border-radius: 5px;
+    transform: rotate(-4deg);
+    margin-left: 169px;
+    margin-top: -9px;
+    padding-top: 11px;
+    padding-left: 15px;
+    padding-right: 14px;
+  }
+
+  .block {
+    width: 100%;
+    height: 100%;
+    left: 432px;
+    top: 702px;
+    font-family: "Roboto Slab", serif;
+    color: white;
+    margin: auto;
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+  .block-two {
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    color: #ffffff;
+    font-size: 12px;
+    position: relative;
+    bottom: 31px;
+    line-height: 130%;
+  }
+}
+/*  --------------------------------------------------------- //  МЕДИАЗАПРОСЫ   ДЛЯ ПЛАНШЕТОВ  */
+
+/*  */
+
+/* --------------------------------------------------------- МЕДИАЗАПРОСЫ ДЛЯ СМАРТФОНОВ  */
+@media (min-width: 320px) and (max-width: 991px) {
+  .how-to-watch-movie {
+    width: 225px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 41px;
+
+    position: relative;
+    right: 42px;
+
+    margin-bottom: 74px;
+  }
+
+  .top {
+    display: flex;
+  }
+
+  .info {
+    display: flex;
+    height: 32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    justify-content: end;
+  }
+
+  /* Текст    Онлайн курс     18 часов   8 сентября */
+  .info p {
+    margin-top: 0;
+    font-size: 10px;
+    line-height: 115%;
+    width: 60px;
+  }
+
+  .globe {
+    width: 10px;
+    height: 10px;
+    margin-right: 9px;
+  }
+
+  .clock {
+    width: 10px;
+    height: 10px;
+    margin-left: 7px;
+    margin-right: 8px;
+  }
+
+  .calendar {
+    width: 10px;
+    height: 10px;
+    margin-left: -3px;
+    margin-right: 8px;
+  }
+
+  /* Ряд для текстового содержимого (слева)  и картинки (справа) */
+  .center {
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: column;
+  }
+
+  .first-part {
+    height: auto;
+  }
+
+  .how {
+    width: 292px;
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: bold;
+
+    color: #000000;
+    margin-top: -10px;
+    margin-left: 2px;
+    height: 46px;
+
+    font-size: 37px;
+    line-height: 101.38%;
+  }
+
+  /* Текст -  "За 8 занятий.. */
+  .text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+
+    color: #000000;
+    margin-top: 46px;
+    margin-left: 2px;
+
+    font-size: 10px;
+    line-height: 150%;
+  }
+
+  .second-part {
+    margin-right: 0;
+    margin-top: -2px;
+    margin-left: auto;
+    position: relative;
+    left: 83px;
+  }
+
+  /* Картинка человека */
+  .second-part img {
+    width: 141px;
+    height: 175px;
+  }
+
+  .third-part {
+    width: 227px;
+    height: 93px;
+    background-color: #1e4681;
+    border-radius: 5px;
+    transform: rotate(-4deg);
+    margin-left: 2px;
+    margin-top: 36px;
+    padding-top: 7px;
+    padding-left: 15px;
+    padding-right: 14px;
+  }
+
+  /* СИНИЙ ТЕКСТОВЫЙ БЛОК -    Зритель для меня не потребитель */
+  .block {
+    width: 100%;
+    height: 100%;
+    left: 432px;
+    top: 702px;
+    font-family: "Roboto Slab", serif;
+    color: white;
+    margin: auto;
+    margin-bottom: 6px;
+    font-size: 11px;
+    line-height: 130%;
+  }
+
+  /* Андрей Тарковский */
+  .block-two {
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    color: #ffffff;
+    position: relative;
+    bottom: 28px;
+    right: -4px;
+    font-size: 10px;
+    line-height: 130%;
+  }
+}
+
+/* -------------------------------------------------------//  МЕДИАЗАПРОСЫ ДЛЯ СМАРТФОНОВ  */
+
+/*  */
+
+/* Медиазапросы   для десктопов/широких экранов.    Устраняем проблему поломанных карточек  */
+@media (min-width: 1720px) {
+  .how-to-watch-movie {
+    /* width: 1112px; */
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 91px;
+    position: relative;
+    right: 42px;
+    margin-bottom: 170px;
+  }
+}
+
+/* ----------------------------- -------------------------- //   Секция   Как смотреть  кино ------------------------ */
+
+/* ----------------------------------------------------------- ----  Секция АВТОРЫ  КУРСА  ---------------------------------------------------------------------*/
+
+/* .course-authors {
+  width: 834px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: blueviolet;
+} */
+
+/* Флекс-родитель, который будет позиционировать детей - ширина у него будет 1217 пикселей- */
+.course-authors__flex-parent {
+  display: flex;
+  justify-content: space-between;
+
+  /* width: 1217px; */
+  width: 95%;
+
+  /* Ограничили блок по ширине */
+  max-width: 1400px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-left: 10px;
+
+  margin-bottom: 35px;
+}
+
+/* Стили для  большого белого блока с текстом,    и для ЛЕВОГО автора , и для ПРАВОГО  */
+.course-authors__author-description {
+  visibility: hidden;
+}
+
+/* Стиль, который делающий текстовый блок видимым.  Этот стиль добавится блоку, когда мы наведём курсором мыши на значок "i" */
+.visible {
+  visibility: visible;
+}
+
+/*----------- Автор слева (на мобильной версии сайта он будет расположен сверху) */
+
+/*  общий блок левого автора */
+.course-authors__left-author {
+  width: 616px;
+
+  /* background-color: lightgreen; */
+
+  margin-right: 15px;
+
+  padding-top: 164px;
+}
+
+/* Заголовок  "Авторы курса" */
+.course-authors__heading {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 101.38%;
+
+  margin-bottom: 84px;
+}
+
+/* Ряд с аватаром и инициалами */
+.course-authors__left-author .course-authors__avatar-and-fio {
+  display: flex;
+
+  align-items: center;
+
+  padding-left: 38px;
+}
+
+/* Аватар левого автора */
+.course-authors__left-author .course-authors__avatar {
+  margin-right: 18px;
+}
+
+.course-authors__left-author .course-authors__fio {
+  position: relative;
+
+  bottom: 16px;
+}
+
+/* Имя автора       Данила Кузнецов    */
+.course-authors__left-author .course-authors__fio h3 {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 101.38%;
+
+  position: relative;
+  top: 5px;
+}
+
+/* Значок "i"  обозначающий всплывающую подсказку   ( значок реализован в виде ссылки, тег <a></a> )  */
+.course-authors__information {
+  position: relative;
+  bottom: 3px;
+
+  cursor: pointer;
+
+  background: #ffffff;
+  box-shadow: 1px 1px 8px #5784c8;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: center;
+
+  margin-left: 10px;
+
+  padding-top: 2px;
+
+  transition: all 0.4s ease;
+}
+
+.course-authors__information:hover {
+  background-color: rgb(218, 250, 215);
+}
+
+/* Краткая характеристика автора              режиссёр, историк кино     */
+.course-authors__left-author .course-authors__fio p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+
+  position: relative;
+  top: 15px;
+}
+
+/* Большой текстовый блок с описанием автора */
+.course-authors__left-author .course-authors__author-description {
+  width: 399px;
+  padding: 29px 21px 35px 25px;
+
+  background: #ffffff;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+
+  margin-left: auto;
+
+  position: relative;
+
+  bottom: 15px;
+}
+
+/* Стили для двух параграфов , которые находятся внутри большого текстового блока    */
+.course-authors__left-author .course-authors__author-description p {
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.course-authors__left-author .course-authors__author-description p:first-child {
+  margin-bottom: 23px;
+}
+
+/* --------// Автор слева (на мобильной версии сайта он будет расположен сверху) */
+
+/*  */
+
+/*  */
+
+/*  */
+
+/* ------------------------------ Автор  справа ------------- */
+
+/*  общий блок правого автора */
+.course-authors__right-author {
+  width: 568px;
+
+  /* background-color: red; */
+}
+
+/* Ряд с аватаром и инициалами */
+.course-authors__right-author .course-authors__avatar-and-fio {
+  display: flex;
+
+  align-items: center;
+}
+
+/* Аватар */
+.course-authors__right-author .course-authors__avatar {
+  margin-right: 19px;
+
+  position: relative;
+  left: -4px;
+}
+
+/* У фотографии правого автора будет псевдоэлемент - картинка программиста, сидящего за компьютером */
+.course-authors__right-author .course-authors__avatar::before {
+  content: "";
+
+  /* На низких разрешениях скроем эту картинку! */
+  display: block;
+
+  width: 269px;
+  height: 215px;
+
+  position: absolute;
+  top: -628px;
+  right: -386px;
+
+  background-image: url("./image/image-rastr/desktop/programmer.png");
+}
+
+/* Имя автора       Данила Кузнецов    */
+.course-authors__right-author .course-authors__fio h3 {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 101.38%;
+  padding-top: 2px;
+
+  margin-bottom: 17px;
+
+  position: relative;
+  top: 9px;
+  right: 4px;
+}
+
+/*  слегка пододвинем    ВПРАВО    значок   "i"    */
+.course-authors__right-author
+  .course-authors__fio
+  h3
+  .course-authors__information {
+  margin-left: 15px;
+  bottom: 0;
+}
+
+/* Краткая характеристика автора              режиссёр, историк кино     */
+.course-authors__right-author .course-authors__fio p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+
+  position: relative;
+  right: 4px;
+}
+
+/* Большой текстовый блок с описанием автора */
+.course-authors__right-author .course-authors__author-description {
+  width: 399px;
+  padding: 24px 21px 29px 25px;
+
+  background: #ffffff;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+
+  margin-left: auto;
+  margin-bottom: 4px;
+
+  position: relative;
+  left: 13px;
+}
+
+/* Псевдоэлемент для Большого текстового блока   в виде картинки с изображением программиста , сидящего за компьютером  */
+.course-authors__right-author .course-authors__author-description::before {
+  /* content: "";
+
+  display: block;
+
+  width: 269px;
+  height: 215px;
+
+  position: absolute;
+  top: -250px;
+
+  right: 11px;
+
+  background-image: url("./image/image-rastr/desktop/programmer.png"); */
+}
+
+/* Стили для двух параграфов , которые находятся внутри большого текстового блока    */
+.course-authors__right-author .course-authors__author-description p {
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.course-authors__right-author
+  .course-authors__author-description
+  p:first-child {
+  margin-bottom: 23px;
+}
+/* ----------------------//  Автор  справа ------------- */
+
+/*  */
+
+/*  ------------------------------------------------------------        МЕДИАЗАПРОСЫ          Для планшетов  ----------------------------------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1279px) {
+  /* Флекс-родитель, который будет позиционировать детей - ширина у него будет 1217 пикселей */
+  .course-authors__flex-parent {
+    /* background-color: aqua; */
+    /* width: 704px; */
+    width: 71%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 17px;
+  }
+
+  /* Псевдоэлемент для правого автора  -  картинка с программистом */
+  .course-authors__right-author .course-authors__avatar::before {
+    content: "";
+
+    /* На низких разрешениях скроем эту картинку! */
+    display: block;
+
+    width: 155px;
+    height: 124px;
+
+    position: absolute;
+    top: -365px;
+    right: -223px;
+
+    background-image: url("./image/image-rastr/desktop/programmer.png");
+    background-size: cover;
+  }
+
+  /*  слегка пододвинем    ВПРАВО    значок   "i"    */
+  .course-authors__left-author
+    .course-authors__fio
+    h3
+    .course-authors__information {
+    width: 16px;
+    height: 16px;
+
+    font-size: 10.425px;
+    line-height: 130%;
+  }
+
+  .course-authors__left-author .course-authors__avatar-and-fio {
+    padding-left: 16px;
+  }
+
+  /* Заголовок "Авторы курса"   */
+  .course-authors__heading {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 101.38%;
+
+    position: relative;
+    right: 4px;
+    bottom: 5px;
+
+    margin-bottom: 45px;
+  }
+
+  /* Аватар левого автора */
+  .course-authors__left-author .course-authors__avatar img {
+    display: block;
+    width: 109px;
+    height: 103px;
+  }
+
+  /* Имя    левого  втора       Данила Кузнецов    */
+  .course-authors__left-author .course-authors__fio h3 {
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 101.38%;
+
+    position: relative;
+    top: 8px;
+    right: 6px;
+  }
+
+  /* Краткая характеристика левого автора              режиссёр, историк кино     */
+  .course-authors__left-author .course-authors__fio p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 130%;
+    /* or 13px */
+
+    position: relative;
+    top: 15px;
+
+    right: 7px;
+  }
+
+  /* Слева    Большой текстовый блок с описанием автора */
+  .course-authors__left-author .course-authors__author-description {
+    width: 231px;
+    padding: 19px 12px 25px 14px;
+
+    background: #ffffff;
+    box-shadow: 0.579167px 0.579167px 11.5833px rgba(0, 0, 0, 0.25);
+    border-radius: 17.375px;
+
+    margin-left: auto;
+
+    position: relative;
+
+    bottom: 10px;
+  }
+
+  /* Для левого автора    Стили для двух параграфов , которые находятся внутри большого текстового блока    */
+  .course-authors__left-author .course-authors__author-description p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 130%;
+  }
+
+  /*  */
+  .course-authors__left-author
+    .course-authors__author-description
+    p:first-child {
+    margin-bottom: 14px;
+  }
+
+  /* -------------------------------------------------    Для ПРАВОГО автора  */
+
+  /* Большой текстовый блок с описанием автора */
+  .course-authors__right-author .course-authors__author-description {
+    width: 231px;
+    padding: 14px 12px 23px 15px;
+    background: #ffffff;
+    box-shadow: 0.579167px 0.579167px 11.5833px rgb(0 0 0 / 25%);
+    border-radius: 17.375px;
+    margin-left: auto;
+    margin-bottom: 67px;
+    position: relative;
+    top: 65px;
+    right: 40px;
+    transform: translateX(-8px);
+  }
+
+  /* Стили для двух параграфов , которые находятся внутри большого текстового блока    */
+  .course-authors__right-author .course-authors__author-description p {
+    font-size: 10px;
+    line-height: 130%;
+  }
+
+  /* Отступ вниз для параграфа */
+  .course-authors__right-author
+    .course-authors__author-description
+    p:first-child {
+    margin-bottom: 14px;
+  }
+
+  /* Аватар */
+  .course-authors__right-author .course-authors__avatar img {
+    width: 104px;
+    height: 96px;
+
+    position: relative;
+    right: 2px;
+  }
+
+  /* Имя автора справа */
+  .course-authors__right-author .course-authors__fio h3 {
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 101.38%;
+
+    position: relative;
+    right: 14px;
+    top: 5px;
+  }
+
+  /* Краткое описание автора */
+  .course-authors__right-author .course-authors__fio p {
+    font-size: 10px;
+    line-height: 130%;
+
+    position: relative;
+    bottom: 7px;
+    right: 15px;
+  }
+
+  /*  слегка пододвинем    ВПРАВО    значок   "i"   у правого автора */
+  .course-authors__right-author
+    .course-authors__fio
+    h3
+    .course-authors__information {
+    width: 17px;
+    height: 17px;
+    font-size: 10.425px;
+    line-height: 130%;
+    position: relative;
+    top: -2px;
+    right: 4px;
+  }
+
+  /* Псевдоэлемент для Большого текстового блока   в виде картинки с изображением программиста , сидящего за компьютером  */
+  .course-authors__right-author .course-authors__author-description::before {
+    /* content: "";
+    display: block;
+    width: 155px;
+    height: 124px;
+    position: absolute;
+    top: -143px;
+    right: 9px;
+    background-image: url(./image/image-rastr/desktop/programmer.png);
+    background-size: cover; */
+  }
+}
+/*  ------------------------------------------------------------ //    МЕДИАЗАПРОСЫ          Для планшетов  ----------------------------------------------------------------------- */
+
+/*  */
+
+/*  */
+
+/* -------------------------------------------------------------------   МЕДИАЗАПРОСЫ  ДЛЯ   СМАРТФОНОВ   ---------------------------------------------------- */
+@media (min-width: 320px) and (max-width: 991px) {
+  /* Ширина блоков Левый автор  и   Правый автор       на смартфонах  - */
+  .course-authors__left-author,
+  .course-authors__right-author {
+    width: 94.68%;
+  }
+
+  .course-authors__left-author {
+    padding-top: 0;
+  }
+
+  .course-authors__left-author.parent-author {
+    margin-bottom: 79px;
+  }
+
+  /* Делаем облачка текста видимыми */
+  .course-authors__author-description {
+    visibility: visible;
+  }
+
+  /* Делаем значок "i"  невидимым */
+  .course-authors__information {
+    display: none;
+  }
+
+  /* Флекс-родитель, который будет позиционировать детей - ширина у него будет 1217 пикселей */
+  .course-authors__flex-parent {
+    max-width: 500px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 17px;
+  }
+
+  /* Псевдоэлемент для правого автора  -  картинка с программистом */
+  .course-authors__right-author .course-authors__avatar::before {
+    content: "";
+
+    /* На низких разрешениях скроем эту картинку! */
+    display: none;
+
+    width: 155px;
+    height: 124px;
+
+    position: absolute;
+    top: -365px;
+    right: -217px;
+
+    background-image: url("./image/image-rastr/desktop/programmer.png");
+    background-size: cover;
+  }
+
+  /*  слегка пододвинем    ВПРАВО    значок   "i"    */
+  .course-authors__left-author
+    .course-authors__fio
+    h3
+    .course-authors__information {
+    width: 16px;
+    height: 16px;
+
+    font-size: 10.425px;
+    line-height: 130%;
+  }
+
+  /* Для левого автора  - РЯД  с аватаром , инициалами  и кратким описанием  */
+  .course-authors__left-author .course-authors__avatar-and-fio {
+    padding-left: 0;
+
+    position: relative;
+    right: 23px;
+  }
+
+  /* Заголовок "Авторы курса"   */
+  .course-authors__heading {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 101.38%;
+
+    position: relative;
+    right: 10px;
+    bottom: 5px;
+
+    margin-bottom: 33px;
+  }
+
+  /* Аватар левого автора */
+  .course-authors__left-author .course-authors__avatar img {
+    display: block;
+    width: 88px;
+    height: 82px;
+  }
+
+  /* Имя    левого  втора       Данила Кузнецов    */
+  .course-authors__left-author .course-authors__fio h3 {
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: bold;
+
+    font-size: 14px;
+    line-height: 101.38%;
+
+    position: relative;
+    top: 11px;
+    right: 6px;
+  }
+
+  /* Краткая характеристика левого автора              режиссёр, историк кино     */
+  .course-authors__left-author .course-authors__fio p {
+    font-style: normal;
+    font-weight: normal;
+
+    font-size: 10px;
+    line-height: 130%;
+
+    position: relative;
+    top: 18px;
+
+    right: 7px;
+  }
+
+  /* Слева    Большой текстовый блок с описанием автора */
+  .course-authors__left-author .course-authors__author-description {
+    width: 214px;
+    padding: 0;
+    background: #ffffff;
+    box-shadow: none;
+    /* border-radius: 17.375px; */
+    /* margin-left: auto; */
+    position: relative;
+    bottom: -2px;
+    left: 12px;
+  }
+
+  /* Для левого автора    Стили для двух параграфов , которые находятся внутри большого текстового блока    */
+  .course-authors__left-author .course-authors__author-description p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    width: 214px;
+    line-height: 130%;
+  }
+
+  /*  */
+  .course-authors__left-author
+    .course-authors__author-description
+    p:first-child {
+    margin-bottom: 14px;
+  }
+
+  /* -------------------------------------------------    Для ПРАВОГО автора  */
+
+  /* Для ПРАВОГО автора  - РЯД  с аватаром , инициалами  и кратким описанием  */
+  .course-authors__right-author .course-authors__avatar-and-fio {
+    position: relative;
+    right: 20px;
+  }
+
+  .course-authors__right-author.parent-author {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 333px;
+    position: relative;
+    top: 40px;
+  }
+
+  /* Большой текстовый блок с описанием автора */
+  .course-authors__right-author .course-authors__author-description {
+    width: 231px;
+    padding: 14px 12px 22px 15px;
+
+    background: #ffffff;
+    box-shadow: none;
+    border-radius: 17.375px;
+
+    margin-left: auto;
+    margin-bottom: 66px;
+
+    position: relative;
+
+    top: -8px;
+    right: 40px;
+
+    transform: translateX(-8px);
+  }
+
+  /* Стили для двух параграфов , которые находятся внутри большого текстового блока    */
+  .course-authors__right-author .course-authors__author-description p {
+    font-size: 10px;
+    line-height: 130%;
+  }
+
+  /* Отступ вниз для параграфа */
+  .course-authors__right-author
+    .course-authors__author-description
+    p:first-child {
+    margin-bottom: 14px;
+  }
+
+  /* Ширина второго параграфа */
+  .course-authors__right-author
+    .course-authors__author-description
+    p:last-child {
+    width: 207px;
+  }
+
+  /* Аватар */
+  .course-authors__right-author .course-authors__avatar img {
+    width: 88px;
+    height: 82px;
+
+    position: relative;
+    right: 1px;
+  }
+
+  /* Имя автора справа */
+  .course-authors__right-author .course-authors__fio h3 {
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 101.38%;
+
+    position: relative;
+    right: 20px;
+    top: 2px;
+  }
+
+  /* Краткое описание автора */
+  .course-authors__right-author .course-authors__fio p {
+    font-size: 10px;
+    line-height: 130%;
+    width: 201px;
+
+    position: relative;
+    bottom: 6px;
+    right: 20px;
+  }
+
+  /*  слегка пододвинем    ВПРАВО    значок   "i"   у правого автора */
+  .course-authors__right-author
+    .course-authors__fio
+    h3
+    .course-authors__information {
+    width: 17px;
+    height: 17px;
+    font-size: 10.425px;
+    line-height: 130%;
+    position: relative;
+    top: 1px;
+    right: 4px;
+  }
+}
+/* --------------------------------------------------------- // МЕДИАЗАПРОСЫ  ДЛЯ   СМАРТФОНОВ ----------- */
+
+/*  */
+
+/* --------------------------------------------------------------- //   Секция АВТОРЫ  КУРСА ---------------------------------------------------------------  */
+
+/*  */
+
+/* ------------------------------------------ ----------------   Секция "Курс прошло уже 1616 человек"-------------------------------------- */
+
+/* Сама секция.  Тег section */
+.course-reviews {
+  background: #efefef;
+  padding-top: 91px;
+
+  padding-bottom: 111px;
+}
+
+/* Технический контейнер. Нужен только для того, чтобы отцентровать контент в середине страницы */
+.container1188px {
+  /* width: 1188px; */
+  width: 92.95%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Заголовок "Курс прошло уже 1616 человек" */
+.course-reviews__heading {
+  font-family: "Roboto Slab", serif;
+
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 101.38%;
+
+  margin-bottom: 72px;
+}
+
+/* Сама белая карточка */
+.course-reviews__card {
+  background: #ffffff;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+
+  width: 791px;
+
+  /* padding: 40px 46px 29px 45px; */
+  padding: 40px 46px 27px 45px;
+}
+
+/* Аватарка пользователя */
+.course-reviews__card-avatar-user {
+  margin-right: 34px;
+
+  position: relative;
+  bottom: 3px;
+}
+
+/* Параграф  -  Отзыв пользователя о курсах */
+.course-reviews__card-description {
+  font-size: 20px;
+  line-height: 150%;
+
+  margin-bottom: 36px;
+}
+
+/*  РЯД   с аватаркой , фио пользователя  и иконкой соцсети  */
+.course-reviews__card-row-avatar-and-fio {
+  display: flex;
+  align-items: center;
+  margin-left: -20px;
+}
+
+/*  "Екатерина Палехова"  */
+.course-reviews__row-name-and-icon p {
+  position: relative;
+  bottom: 13px;
+
+  margin-bottom: 2px;
+}
+
+/* Подвинули иконку фейсбука */
+.course-reviews__row-name-and-icon img {
+  position: relative;
+  top: 14px;
+  right: 4px;
+}
+
+/* Стилизую  текст    "Екатерина Палехова"   */
+.course-reviews__row-name-and-icon p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 101.38%;
+}
+
+/*  ---------------------------------------------------------  МЕДИАЗАПРОСЫЫ    ДЛЯ   ПЛАНШЕТОВ  ----------------------------------------------------   */
+@media (min-width: 992px) and (max-width: 1279px) {
+  /* Сама секция.  Тег section */
+  .course-reviews {
+    background: #efefef;
+    padding-top: 51px;
+
+    padding-bottom: 65px;
+  }
+
+  /* Технический контейнер. Нужен только для того, чтобы отцентровать контент в середине страницы */
+  .container1188px {
+    /* width: 1188px; */
+    width: 69.56%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Заголовок "Курс прошло уже 1616 человек" */
+  .course-reviews__heading {
+    font-family: "Roboto Slab", serif;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 101.38%;
+
+    margin-bottom: 40px;
+  }
+
+  /* Сама белая карточка */
+  .course-reviews__card {
+    background: #ffffff;
+    box-shadow: 0.579167px 0.579167px 11.5833px rgb(0 0 0 / 25%);
+    border-radius: 17.375px;
+    /* width: 791px; */
+    width: 460px;
+    /* padding: 40px 46px 29px 45px; */
+    padding: 25px 42px 14px 28px;
+    position: relative;
+    right: 2px;
+  }
+
+  /* Аватарка пользователя */
+  .course-reviews__card-avatar-user {
+    margin-right: 26px;
+    position: relative;
+    bottom: 5px;
+    width: 110px;
+    left: 10px;
+    height: 97px;
+  }
+
+  /* Параграф  -  Отзыв пользователя о курсах */
+  .course-reviews__card-description {
+    margin-bottom: 20px;
+
+    font-size: 12px;
+    line-height: 150%;
+  }
+
+  /*  РЯД   с аватаркой , фио пользователя  и иконкой соцсети  */
+  .course-reviews__card-row-avatar-and-fio {
+    display: flex;
+    align-items: center;
+    margin-left: -20px;
+  }
+
+  /*  "Екатерина Палехова"  */
+  .course-reviews__row-name-and-icon p {
+    position: relative;
+    bottom: 10px;
+
+    margin-bottom: 2px;
+  }
+
+  /* Подвинули иконку фейсбука */
+  .course-reviews__row-name-and-icon img {
+    position: relative;
+    top: 5px;
+    right: -1px;
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Стилизую  текст    "Екатерина Палехова"   */
+  .course-reviews__row-name-and-icon p {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 101.38%;
+
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 101.38%;
+  }
+}
+
+/* Медиазапросы   для десктопов/широких экранов.    Устраняем проблему поломанных карточек  */
+@media (min-width: 1720px) {
+  .container1188px {
+    /* width: 1188px; */
+    width: 92.95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+}
+/*  --------------------------------------------------------- //  МЕДИАЗАПРОСЫ    ДЛЯ   ПЛАНШЕТОВ  ----------------------------------------------------   */
+
+/*  */
+
+/* ----------------------------------------------------------------- МЕДИАЗАПРОСЫ ДЛЯ СМАРТТФОНОВ ------------ */
+@media (min-width: 320px) and (max-width: 991px) {
+  /* Сама секция.  Тег section */
+  .course-reviews {
+    background: #efefef;
+    padding-top: 41px;
+
+    padding-bottom: 55px;
+  }
+
+  /* Технический контейнер. Нужен только для того, чтобы отцентровать контент в середине страницы */
+  .container1188px {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Заголовок "Курс прошло уже 1616 человек" */
+  .course-reviews__heading {
+    font-family: "Roboto Slab", serif;
+
+    font-style: normal;
+    font-weight: bold;
+
+    font-size: 26px;
+    line-height: 101.38%;
+
+    margin-bottom: 28px;
+    width: 257px;
+
+    position: relative;
+    right: 25px;
+  }
+
+  /* Сама белая карточка */
+  .course-reviews__card {
+    background: #ffffff;
+    box-shadow: 0.579167px 0.579167px 11.5833px rgb(0 0 0 / 25%);
+    border-radius: 17.375px;
+    width: 308px;
+    padding: 18px 21px 6px 21px;
+    position: relative;
+    right: 2px;
+  }
+
+  /* Аватарка пользователя */
+  .course-reviews__card-avatar-user {
+    margin-right: 24px;
+    position: relative;
+    bottom: 5px;
+    left: 16px;
+
+    width: 92px;
+    height: 84px;
+  }
+
+  .course-reviews__card-avatar-user img {
+    display: block;
+    width: 80px;
+    height: 84px;
+  }
+
+  /* Параграф  -  Отзыв пользователя о курсах */
+  .course-reviews__card-description {
+    margin-bottom: 18px;
+
+    font-size: 10px;
+    line-height: 150%;
+  }
+
+  /*  РЯД   с аватаркой , фио пользователя  и иконкой соцсети  */
+  .course-reviews__card-row-avatar-and-fio {
+    display: flex;
+    align-items: center;
+    margin-left: -20px;
+  }
+
+  /*  "Екатерина Палехова"  */
+  .course-reviews__row-name-and-icon p {
+    position: relative;
+    bottom: 10px;
+
+    margin-bottom: 2px;
+
+    font-size: 14px;
+    line-height: 101.38%;
+  }
+
+  /* Подвинули иконку фейсбука */
+  .course-reviews__row-name-and-icon img {
+    position: relative;
+    top: 5px;
+    right: -1px;
+    width: 14px;
+    height: 17px;
+  }
+
+  /* Стилизую  текст    "Екатерина Палехова"   */
+  .course-reviews__row-name-and-icon p {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 101.38%;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 101.38%;
+  }
+}
+/* -------------------------------------------------------- // МЕДИАЗАПРОСЫ ДЛЯ СМАРТФОНОВ ------------ */
+
+/* ------------------------------------------------ //    Секция "Курс прошло уже 1616 человек"  -------------------------------------- */
+
+/*  */
+
+/* ------------------------------------------------------- Секция "Начало курса — 8 сентября"  -------------------------------------------------------------------------------*/
+
+/* Сама секция.   Тег section */
+.start-course {
+  padding-top: 179px;
+  /* padding-bottom: 185px; */
+
+  padding-bottom: 200px;
+
+  background: #9dc9c8;
+}
+
+/* Тенический контейнер шириной 1196 пикселей. Нужен только для того, чтобы отцентрировать содержимое */
+.container1196px {
+  width: 1196px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Заголовок   "Начало курса — 8 сентября"    */
+.start-course__heading {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 101.38%;
+
+  margin-bottom: 66px;
+}
+
+/* текст   "Стоимость"  */
+.start-course__label-price {
+  font-size: 25px;
+  line-height: 101.38%;
+
+  margin-bottom: 5px;
+}
+
+/* Текст    3900 р. */
+.start-course__price {
+  font-size: 80px;
+  line-height: 101.38%;
+  margin-bottom: 78px;
+}
+
+/* Два текстовых блока с описанием */
+.start-course__wrapper-for-two-blocks {
+  display: flex;
+}
+
+/* Заголовки в каждом из двух блоков     ---     "Для любого уровня"  и    "Проходите сейчас"    */
+.start-course__wrapper-for-two-blocks h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 101.38%;
+  /* or 25px */
+
+  margin-bottom: 16px;
+}
+
+/* Текстовое описание внутри каждого блока */
+.start-course__wrapper-for-two-blocks p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 101.38%;
+}
+
+/* Правый отступ для левого блока */
+.start-course__left-block {
+  margin-right: 70px;
+}
+
+/* Ширина каждого блока */
+.start-course__left-block,
+.start-course__right-block {
+  width: 294px;
+}
+
+/* ----------------------------------------------------- МЕДИАЗАПРОСЫ   ДЛЯ    ПЛАНШЕТОВ  -------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1279px) {
+  /* Сама секция.   Тег section */
+  .start-course {
+    padding-top: 102px;
+    /* padding-bottom: 185px; */
+
+    padding-bottom: 119px;
+
+    background: #9dc9c8;
+  }
+
+  /* Тенический контейнер шириной 1196 пикселей. Нужен только для того, чтобы отцентрировать содержимое */
+  .container1196px {
+    /* width: 1196px; */
+    width: 70.95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Заголовок   "Начало курса — 8 сентября"    */
+  .start-course__heading {
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 101.38%;
+
+    margin-bottom: 37px;
+    /* or 32px */
+  }
+
+  /* текст   "Стоимость"  */
+  .start-course__label-price {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 101.38%;
+  }
+
+  /* Текст    3900 р. */
+  .start-course__price {
+    font-size: 46px;
+    line-height: 101.38%;
+
+    margin-bottom: 44px;
+  }
+
+  /* Два текстовых блока с описанием */
+  .start-course__wrapper-for-two-blocks {
+    display: flex;
+  }
+
+  /* Заголовки в каждом из двух блоков     ---     "Для любого уровня"  и    "Проходите сейчас"    */
+  .start-course__wrapper-for-two-blocks h3 {
+    font-size: 14px;
+    line-height: 101.38%;
+
+    margin-bottom: 9px;
+  }
+
+  /* Текстовое описание внутри каждого блока */
+  .start-course__wrapper-for-two-blocks p {
+    font-size: 10px;
+    line-height: 101.38%;
+
+    width: 170px;
+  }
+
+  /* Правый отступ для левого блока */
+  .start-course__left-block {
+    margin-right: 43px;
+  }
+
+  /* Ширина каждого блока */
+  .start-course__left-block,
+  .start-course__right-block {
+    width: 170px;
+  }
+}
+
+/* Медиазапросы   для десктопов/широких экранов.    Устраняем проблему поломанных карточек  */
+@media (min-width: 1720px) {
+  .container1196px {
+    width: 1196px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ----------------------------------------------------// МЕДИАЗАПРОСЫ   ДЛЯ    ПЛАНШЕТОВ  -------------------------------------------------*/
+
+/*  */
+
+/* ---------------------------------------------------- Медиазапросы  для СМАРТФОНОВ  ------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 991px) {
+  /* Сама секция.   Тег section */
+  .start-course {
+    padding-top: 63px;
+    /* padding-bottom: 185px; */
+
+    padding-bottom: 69px;
+
+    background: #9dc9c8;
+  }
+
+  /* Тенический контейнер шириной 1196 пикселей. Нужен только для того, чтобы отцентрировать содержимое */
+  .container1196px {
+    width: 310px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Заголовок   "Начало курса — 8 сентября"    */
+  .start-course__heading {
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 101.38%;
+
+    margin-bottom: 33px;
+    width: 224px;
+  }
+
+  /* текст   "Стоимость"  */
+  .start-course__label-price {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 101.38%;
+    margin-bottom: 0px;
+  }
+
+  /* Текст    3900 р. */
+  .start-course__price {
+    font-size: 37px;
+    line-height: 101.38%;
+
+    margin-bottom: 37px;
+  }
+
+  /* Два текстовых блока с описанием */
+  .start-course__wrapper-for-two-blocks {
+    display: flex;
+  }
+
+  /* Заголовки в каждом из двух блоков     ---     "Для любого уровня"  и    "Проходите сейчас"    */
+  .start-course__wrapper-for-two-blocks h3 {
+    font-size: 12px;
+    line-height: 101.38%;
+
+    margin-bottom: 9px;
+  }
+
+  /* Текстовое описание внутри каждого блока */
+  .start-course__wrapper-for-two-blocks p {
+    font-size: 10px;
+    line-height: 101.38%;
+
+    width: 138px;
+  }
+
+  /* Правый отступ для левого блока */
+  .start-course__left-block {
+    margin-right: 32px;
+  }
+
+  /* Ширина каждого блока */
+  .start-course__left-block,
+  .start-course__right-block {
+    width: 170px;
+  }
+}
+/* --------------------------------------------------// Медиазапросы  для СМАРТФОНОВ  ------------------------------------------------*/
+
+/* ----------------------------------------------------- // Секция "Начало курса"  -------------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------    Подвал сайта   Footer    ----------------------------------------------- */
+/* Черный блок */
+.footer {
+  background-color: black;
+  height: 390px;
+  padding-top: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Контейнер с содержимы, помагает в центрирование */
+.container-footer {
+  width: 1196px;
+  height: 317px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Блок содержащий Логотип, иконки на соц.сети и контакты */
+.social-logo {
+  display: flex;
+  justify-content: space-between;
+}
+/* Блок с лого и соц.сетями */
+.logo-icon {
+}
+/* Блок с лого */
+.logo-white {
+  margin-bottom: 25px;
+}
+/* Непосредственно логотип */
+.logo {
+}
+/* Блок с иконками на соц.сети */
+.social-icon {
+  width: 198px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Инстаграм */
+.icon-inst:hover {
+  position: relative;
+  bottom: 5px;
+}
+/* Файсбук */
+.icon-face:hover {
+  position: relative;
+  bottom: 5px;
+}
+/* Вконтакте */
+.icon-vk:hover {
+  position: relative;
+  bottom: 5px;
+}
+/* Вотсап */
+.icon-wa:hover {
+  position: relative;
+  bottom: 5px;
+}
+/* Блок с контактами */
+.contact {
+  /* width: 318px; */
+  height: 88px;
+
+  padding-right: 43px;
+}
+/* Блок с иконкой и номером */
+.nomber-phone {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 19px;
+  padding-top: 6px;
+}
+
+/* Иконка телефона */
+.phone {
+}
+
+/* Номер телефона */
+.nomber {
+  color: #ffffff;
+  /* font-family: Roboto; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 101.38%;
+  margin-right: 57px;
+
+  position: relative;
+  left: 21px;
+  top: 4px;
+}
+.nomber:hover {
+  position: relative;
+  bottom: 5px;
+  text-decoration: underline;
+}
+
+/* Блок с иконкой и электронным адресом */
+.mail {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/* Иконка конверта */
+.mail-icon {
+  margin-bottom: 3px;
+}
+
+/* Электронный адрес */
+.mail-shite {
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 101.38%;
+  margin-right: 30px;
+
+  position: relative;
+  left: 17px;
+  top: 3px;
+}
+.mail-shite:hover {
+  position: relative;
+  bottom: 5px;
+  text-decoration: underline;
+}
+
+/* Блок с нижним названием */
+.synchronization {
+  display: flex;
+  align-items: flex-end;
+  height: 186px;
+  color: #ffffff;
+}
+
+/* Блок находящийся внутри блока с названием */
+.synchroniz {
+  width: 230px;
+  height: 40px;
+}
+
+/* Нижнее название */
+.synch {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 101.38%;
+}
+
+/*  ----------------------------------------------------------------------- МЕДИАЗАПРОСЫ       Для планшетов  --------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1279px) {
+  /* Черный блок */
+  .footer {
+    background-color: black;
+    height: 390px;
+    padding-top: 29px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Контейнер с содержимыМ, помогает в центрировании */
+  .container-footer {
+    /* width: 1196px; */
+    width: 69.95%;
+    height: 317px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Блок содержащий Логотип, иконки на соц.сети и контакты */
+  .social-logo {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 22px;
+  }
+  /* Блок с лого и соц.сетями */
+  .logo-icon {
+  }
+  /* Блок с лого */
+  .logo-white {
+    margin-bottom: 8px;
+  }
+  /* Непосредственно логотип */
+  .logo {
+    width: 66px;
+    height: 39px;
+  }
+  /* Блок с иконками на соц.сети */
+  .social-icon {
+    width: 111px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Размеры иконки Инстаграма */
+  .icon-inst {
+    width: 19px;
+    height: 19px;
+  }
+
+  /* Размеры иконки Фейсбука */
+  .icon-face {
+    width: 19px;
+    height: 19px;
+  }
+
+  /* Размеры иконки VK */
+  .icon-vk {
+    width: 19px;
+    height: 19px;
+  }
+
+  /* Размеры иконки Whats Up */
+  .icon-wa {
+    width: 19px;
+    height: 19px;
+  }
+
+  /* Инстаграм */
+  .icon-inst:hover {
+    position: relative;
+    bottom: 5px;
+  }
+  /* Файсбук */
+  .icon-face:hover {
+    position: relative;
+    bottom: 5px;
+  }
+  /* Вконтакте */
+  .icon-vk:hover {
+    position: relative;
+    bottom: 5px;
+  }
+  /* Вотсап */
+  .icon-wa:hover {
+    position: relative;
+    bottom: 5px;
+  }
+  /* Блок с контактами */
+  .contact {
+    /* width: 318px; */
+    height: 88px;
+
+    padding-right: 4px;
+  }
+  /* Блок с иконкой и номером */
+  .nomber-phone {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 11px;
+    /* padding-top: 6px; */
+  }
+
+  /* Иконка телефона */
+  .phone {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    bottom: 2px;
+    right: 2px;
+  }
+
+  /* Номер телефона */
+  .nomber {
+    color: #ffffff;
+    /* font-family: Roboto; */
+    font-style: normal;
+    font-weight: normal;
+
+    margin-right: 57px;
+
+    position: relative;
+    left: 7px;
+    top: -1px;
+
+    font-size: 14px;
+    line-height: 101.38%;
+  }
+  .nomber:hover {
+    position: relative;
+    bottom: 5px;
+    text-decoration: underline;
+  }
+
+  /* Блок с иконкой и электронным адресом */
+  .mail {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  /* Иконка конверта */
+  .mail-icon {
+    margin-bottom: 3px;
+    width: 15px;
+    height: 10px;
+    position: relative;
+    right: 4px;
+  }
+
+  /* Электронный адрес */
+  .mail-shite {
+    color: #ffffff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+
+    margin-right: 44px;
+
+    position: relative;
+    left: 9px;
+    top: -2px;
+
+    font-size: 14px;
+    line-height: 101.38%;
+  }
+  .mail-shite:hover {
+    position: relative;
+    bottom: 5px;
+    text-decoration: underline;
+  }
+
+  /* Блок с нижним названием */
+  .synchronization {
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+    color: #ffffff;
+  }
+
+  /* Блок находящийся внутри блока с названием */
+  .synchroniz {
+    width: 230px;
+    height: 0px;
+  }
+
+  /* Нижнее название */
+  .synch {
+    font-style: normal;
+    font-weight: normal;
+
+    font-size: 10px;
+    line-height: 101.38%;
+  }
+}
+
+/*  ---------------------------------------------------------------------// МЕДИАЗАПРОСЫ       Для планшетов  --------------------------------------------*/
+
+/*  */
+
+/* -------------------------------------------------------------------  МЕДИАЗАПРОСЫ ДЛЯ СМАРТФОНОВ        ------------------------------ */
+
+@media (min-width: 320px) and (max-width: 991px) {
+  /* Черный блок */
+  .footer {
+    background-color: black;
+    height: 390px;
+    padding-top: 23px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Контейнер с содержимыМ, помогает в центрировании */
+  .container-footer {
+    width: 298px;
+    height: 317px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Блок содержащий Логотип, иконки на соц.сети и контакты */
+  .social-logo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    margin-bottom: 0;
+  }
+
+  /* Блок с лого и соц.сетями */
+  .logo-icon {
+    margin-bottom: 29px;
+  }
+
+  /* Блок с лого */
+  .logo-white {
+    margin-bottom: 2px;
+  }
+
+  /* Непосредственно логотип */
+  .logo {
+    width: 53px;
+    height: 31px;
+  }
+
+  /* Блок с иконками на соц.сети */
+  .social-icon {
+    width: 89px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Размеры иконки Инстаграма */
+  .icon-inst {
+    width: 15px;
+    height: 15px;
+  }
+
+  /* Размеры иконки Фейсбука */
+  .icon-face {
+    width: 15px;
+    height: 15px;
+  }
+
+  /* Размеры иконки VK */
+  .icon-vk {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Размеры иконки Whats Up */
+  .icon-wa {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Инстаграм */
+  .icon-inst:hover {
+    position: relative;
+    bottom: 5px;
+  }
+
+  /* Файсбук */
+  .icon-face:hover {
+    position: relative;
+    bottom: 5px;
+  }
+
+  /* Вконтакте */
+  .icon-vk:hover {
+    position: relative;
+    bottom: 5px;
+  }
+
+  /* Вотсап */
+  .icon-wa:hover {
+    position: relative;
+    bottom: 5px;
+  }
+
+  /* Блок с контактами */
+  .contact {
+    width: 176px;
+    height: auto;
+
+    padding-right: 4px;
+    margin-bottom: 7px;
+  }
+
+  /* Блок с иконкой и номером */
+  .nomber-phone {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 11px;
+    /* padding-top: 6px; */
+  }
+
+  /* Иконка телефона */
+  .phone {
+    width: 13px;
+    height: 13px;
+  }
+
+  /* Номер телефона */
+  .nomber {
+    color: #ffffff;
+    /* font-family: Roboto; */
+    font-style: normal;
+    font-weight: normal;
+
+    margin-right: 57px;
+
+    position: relative;
+    left: 7px;
+    top: 2px;
+
+    font-size: 12px;
+    line-height: 101.38%;
+  }
+
+  .nomber:hover {
+    position: relative;
+    bottom: 5px;
+    text-decoration: underline;
+  }
+
+  /* Блок с иконкой и электронным адресом */
+  .mail {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  /* Иконка конверта */
+  .mail-icon {
+    margin-bottom: 3px;
+
+    width: 12px;
+    height: 8px;
+  }
+
+  /* Электронный адрес */
+  .mail-shite {
+    color: #ffffff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+
+    margin-right: 44px;
+
+    position: relative;
+    left: 9px;
+
+    font-size: 12px;
+    line-height: 101.38%;
+  }
+
+  .mail-shite:hover {
+    position: relative;
+    bottom: 5px;
+    text-decoration: underline;
+  }
+
+  /* Блок с нижним названием */
+  .synchronization {
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+    color: #ffffff;
+  }
+
+  /* Блок находящийся внутри блока с названием */
+  .synchroniz {
+    width: 230px;
+    height: 0px;
+  }
+
+  /* Нижнее название */
+  .synch {
+    font-style: normal;
+    font-weight: normal;
+
+    font-size: 10px;
+    line-height: 101.38%;
+  }
+}
+
+/* ------------------------------------------------------------------// МЕДИАЗАПРОСЫ ДЛЯ СМАРТФОНОВ        ------------------------------ */
+
+/* Дополнительный медиазапрос для смартфонов */
+@media (min-width: 500px) and (max-width: 990px) {
+  .social-logo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+}
+
+/* //  Дополнительный медиазапрос для смартфонов */
+
+/* -----------------------------------------------------------  //   Подвал сайта   Footer    ----------------------------------------------- */
+
+/* ---------------------------------------------------------------------  Секция "ПРОГРАММА КУРСА" */
+
+/* Сам тег section */
+.program {
+  /* width: 1272px; */
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 127px;
+
+  overflow: hidden;
+}
+
+.program-h2-wrapper {
+  /* margin-left: 119px; */
+  display: flex;
+  position: relative;
+}
+
+/* Обёртка карточек */
+.program-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+
+  /* width: 1285px; */
+  width: 99.3%;
+
+  margin-left: auto;
+
+  margin-right: auto;
+}
+
+.program-card {
+  width: 399px;
+  height: 328px;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+
+  /* margin-right: 37px; */
+  margin-right: 2.9%;
+
+  margin-bottom: 36px;
+  margin-top: 6px;
+  position: relative;
+}
+
+.program-card:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.program-h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 55px;
+  line-height: 55.76px;
+  font-weight: 700;
+  margin-bottom: 126px;
+
+  padding-left: 42px;
+}
+
+/* Чёрный прямоугольник */
+.black-rectangle {
+  background-color: black;
+  width: 630px;
+  height: 14px;
+  position: absolute;
+  top: 23px;
+  right: -84px;
+}
+
+.program-card-img {
+  width: 100%;
+  display: inline-block;
+}
+.program-card-heading {
+  font-size: 30px;
+  font-weight: 700;
+  padding-left: 20px;
+  margin-top: 7px;
+}
+.program-card-date {
+  font-size: 25px;
+  font-weight: 400;
+  padding-left: 19px;
+  position: absolute;
+  bottom: 55px;
+}
+.program-card-name {
+  font-size: 25px;
+  font-weight: 400;
+  padding-left: 19px;
+  position: absolute;
+  bottom: 23px;
+}
+
+/*  */
+
+/* ------------------------------------------------------------------------  МЕДИАЗАПРОСЫ  Для планшетов  */
+@media (min-width: 992px) and (max-width: 1279px) {
+  /* Сам тег section */
+  .program {
+    /* width: 1272px; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 12px;
+  }
+
+  .program-h2-wrapper {
+    /* margin-left: 119px; */
+    display: flex;
+    position: relative;
+    right: 24px;
+
+    width: 72.49%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+  }
+
+  .program-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+
+    /* width: 1285px; */
+    width: 74.29%;
+
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+  .program-card {
+    /* width: 399px; */
+    width: 231px;
+
+    height: 189px;
+    background: #ffffff;
+    box-shadow: 0.579167px 0.579167px 8.6875px rgba(0, 0, 0, 0.25);
+    border-radius: 17.375px;
+
+    margin-right: 21px;
+
+    margin-bottom: 19px;
+    margin-top: 6px;
+    position: relative;
+  }
+
+  .program-card:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  .program-h2 {
+    font-family: "Roboto Slab", serif;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 101.38%;
+    padding-left: 35px;
+
+    margin-bottom: 0;
+  }
+
+  /* Чёрный прямоугольник */
+  .black-rectangle {
+    background-color: black;
+    width: 364px;
+    height: 8px;
+    position: absolute;
+    top: 15px;
+    right: -80px;
+  }
+
+  .program-card-img {
+    width: 100%;
+    display: inline-block;
+  }
+  .program-card-heading {
+    font-weight: 700;
+    padding-left: 11px;
+    margin-top: 3px;
+
+    font-size: 17px;
+    line-height: 130%;
+  }
+
+  .program-card-date {
+    font-size: 14px;
+    line-height: 130%;
+
+    font-weight: 400;
+    padding-left: 11px;
+    position: absolute;
+    bottom: 30px;
+  }
+
+  .program-card-name {
+    font-size: 14px;
+    line-height: 130%;
+
+    font-weight: 400;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 11px;
+  }
+}
+/* ---------------------------------------------------------------------- //  МЕДИАЗАПРОСЫ  Для планшетов  */
+
+/* -------------------------------------------------- Медиазапросы   для десктопов/широких экранов.    Устраняем проблему поломанных карточек  */
+@media (min-width: 1720px) {
+  /* Возвращаем  каждой третьей карточке отступ справа */
+  .program-card:nth-of-type(3n) {
+    margin-right: 37px;
+  }
+
+  /* Для обёртки задаём свойство justify-content: center   , которое позволит красиво выстроить карточки по центру  */
+  .program-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Подправим  расположение  картинки - программиста, чтобы он не заезжал на карточки */
+  .course-authors__right-author .course-authors__avatar::before {
+    content: "";
+    display: block;
+    width: 269px;
+    height: 215px;
+    position: absolute;
+    top: -486px;
+    right: 11px;
+    background-image: url(./image/image-rastr/desktop/programmer.png);
+  }
+}
+/* ---------------------------------------------- Медиазапросы   для десктопов/широких экранов.    Устраняем проблему поломанных карточек  */
+
+/*  */
+
+/* ------------------------------------------------------------------ МЕДИАЗАПРОСЫ  ДЛЯ  СМАРТФОНОВ  ------------------------------------------------ */
+@media (min-width: 320px) and (max-width: 991px) {
+  /* Сам тег section */
+  .program {
+    /* width: 1272px; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 57px;
+  }
+
+  .program-h2-wrapper {
+    /* margin-left: 119px; */
+    display: flex;
+    position: relative;
+    right: 24px;
+
+    /* width: 72.49%; */
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 44px;
+  }
+
+  .program-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 74.29%;
+
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+  .program-card {
+    /* width: 399px; */
+    width: 185.92px;
+    height: 152.84px;
+
+    background: #ffffff;
+    box-shadow: 0.579167px 0.579167px 8.6875px rgba(0, 0, 0, 0.25);
+    border-radius: 17.375px;
+
+    margin-right: 1%;
+
+    margin-bottom: 19px;
+    margin-top: 6px;
+    position: relative;
+  }
+
+  .program-card:nth-of-type(3n) {
+    margin-right: 1%;
+  }
+
+  .program-h2 {
+    font-family: "Roboto Slab", serif;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 101.38%;
+    padding-left: 31px;
+
+    margin-bottom: 0;
+  }
+
+  /* Чёрный прямоугольник */
+  .black-rectangle {
+    background-color: black;
+    width: 364px;
+    height: 8px;
+    position: absolute;
+    top: 8px;
+    right: -346px;
+  }
+
+  .program-card-img {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .program-card-heading {
+    font-weight: 700;
+    padding-left: 11px;
+    margin-top: 2px;
+
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+  .program-card-date {
+    font-size: 12px;
+    line-height: 130%;
+    font-weight: 400;
+    padding-left: 8px;
+    position: absolute;
+    bottom: 23px;
+  }
+
+  .program-card-name {
+    font-size: 12px;
+    line-height: 130%;
+    font-weight: 400;
+    padding-left: 8px;
+    position: absolute;
+    bottom: 7px;
+  }
+}
+/* ----------------------------------------------------------------. // МЕДИАЗАПРОСЫ  ДЛЯ  СМАРТФОНОВ  ------------------------------------------------ */
+
+/* --------------------------------------------------------------------- //  Секция "ПРОГРАММА КУРСА" */
